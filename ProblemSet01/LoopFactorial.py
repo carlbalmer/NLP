@@ -12,8 +12,7 @@ def validateuserinput():
 
 def calculatefactorial(n):
     output = 1
-    listofnumbers = list(range(1, n + 1))
-    for i in listofnumbers:
+    for i in range(1, n + 1):
         output *= i
     return output
 

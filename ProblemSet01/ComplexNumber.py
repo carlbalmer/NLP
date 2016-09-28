@@ -1,9 +1,5 @@
 class ComplexNumber:
-    def __init__(self, a=None, b=None):
-        if a is not None and b is not None:
-            self.a = a
-            self.b = b
-        else:
+    def __init__(self, a=0, b=0):
             self.a = 0
             self.b = 0
 
