@@ -18,7 +18,7 @@ for k, v in iter(word_counts.items()):
     if v == 13:
         print(k, end=", ", flush=True)
 
-print("Saving the five most common words to a file")
+print("\n\nSaving the five most common words to a file")
 filename = str(input("Please enter the filename:\n"))
 outputFile = open(filename, 'w')
 for k, v in word_counts.most_common(5):
