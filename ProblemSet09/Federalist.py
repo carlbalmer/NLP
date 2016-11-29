@@ -84,6 +84,6 @@ for testDoc in testWords.keys():
         for key in words[author].keys():
             distances[author] = distances[author] + abs(words[author][key] - testWords[testDoc][key])
     for w in sorted(distances, key=distances.get, reverse=False):
-        out += str(i) + ". " + w + " " + str(distances[w]) + " "
+        out += str(i) + ". " + w + " "  # + str(distances[w]) + " "
         i += 1
     print(out)
